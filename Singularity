@@ -6,9 +6,8 @@
 #  - METIS DONE
 #  - Scalasca
 
-BootStrap: debootstrap
-OSVersion: trusty
-MirrorURL: http://us.archive.ubuntu.com/ubuntu/
+BootStrap: docker
+From:ubuntu:latest
 
 %post
         echo "** Installing requested packages...."
